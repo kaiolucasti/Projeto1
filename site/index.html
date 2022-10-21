@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <script src="jquery-3.6.0.min.js" defer></script>
+        <script src="back-end.js" defer></script>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+
+        <title>Flamengo: conhecendo sua história</title>
+    </head>
+    
+    <body> 
+
+        <center>
+            
+            <div>
+                <a href="#pag-sobre" class="btn botoes" >Sobre o jogo</a>
+                <a href="#pag-perg" class="btn botoes">Perguntas</a>
+                <a href="#pag-cont" class="btn botoes">Contato</a>
+                
+            </div>
+        </center>
+        
+        <center><img src="imagens/Flamengo_braz_logo.svg.png" width="8%" height="8%"></center><br>
+
+        <center>
+            <h1 class="titulo">Você conhece bem o Flamengo?<b class="sobre"> Descubra agora</b></h1>
+         </center><br>
+
+        <!-- SOBRE -->
+        
+        <section>
+            <h1 id="pag-sobre" class="btn1 botoes" onclick="sobre()">Sobre o jogo</h1>
+ 
+            <b id = "text" class="textos" style="display: none">
+                <center>Está página foi desenvolvida pelo (Dev - Kaio Lucas), 
+                     e tem como objetivo testar o seu conhecimento
+                     sobre o time, Clube de Regatas do Flamengo.
+                </center></b>
+        </section>
+     
+        <!-- PERGUNTAS -->
+        <section>
+            <h1 id="pag-perg" class="btn1 botoes" onclick="pergunta()">Perguntas</h1>
+            <div class="questoes" id="perg" ></div>
+                 
+            <!-- <button onclick="iniciar()">Iniciar</button> -->
+            <div id="perguntas" style="display: none">
+                <button onclick="perguntas()">Iniciar/Próxima pergunta</button>
+                <button onclick="confirmacao()">Confirme a alternativa</button>
+                <button onclick="reiniciar()">Reiniciar jogo</button>
+            </div>
+        </section>
+             
+        <!-- RESULTADO --> 
+        <section>
+            <h1 class="btn1 botoes" id="pag-perg" onclick="resultado()">Resultado</h1>
+            <div class="questoes" id="resultado"></div>
+ 
+            <div id="result" style="display:none">
+                <button onclick="pontos()">Ver pontuação final</button>
+                <button onclick="reiniciar2()">Reiniciar resultado</button>
+            </div>    
+        </section>
+        <br>
+        <!--Historia-->
+        
+        <section>
+            <h1 class="title">Flamengo: conheça a história e <br> curiosidades do seu time do coração</h1>
+            
+            <p class="title2">Confira nesta matéria todos os detalhes do Flamengo e curiosidades que o
+                levaram a conquistar muitos corações,<br> do Rio de Janeiro para o Mundo!</p>
+            
+                <div class="historia"><br>
+                <img src="imagens/Flamengo_banner.jpg" width="100%" height="100%">
+                <h1>Qual é a história do Flamengo?</h1>
+
+                A história do Flamengo teve início em novembro de 1895. 
+                Nesse período, 
+                o time contava com um clube de remo popular no Rio de Janeiro: o Clube das Regatas do Flamengo.
+                Em 1912, o futebol começou a crescer como esporte de destaque carioca.
+                Foi o momento certo para o clube transcender as águas do remo e ir para os campos.
+                Com essa trajetória do mar para a terra, o Rubro-negro começou a crescer e a ganhar mais adeptos.
+                Uma peculiaridade é que o clube teve que passar por um desafio para continuar atuando nas águas.
+                Teve um dos seus barcos naufragado, recuperado e depois roubado, o Pherusa.
+                Isso poderia ser um desafio grande demais para alguns, mas não para o Flamengo,
+                que conseguiu um novo barco no dia 15 de novembro de 1895, o Scyra,
+                dando início oficial ao grupo de regatas. Como o Flamengo entrou no futebol?
+                O grupo de regatas já tinha destaque no Rio de Janeiro, 
+                com o futebol ganhando as quadras no início do século XX.
+                O Rubro-negro decidiu fazer a inclusão da terra, além do mar que já era dominado.
+                Esse passo tornou o grupo ainda mais popular. Os torcedores, que amavam vê-lo no remo,
+                começaram a incentivá-lo também nos gramados. 
+                Isso fez com que o time rubro-negro se tornasse o mais popular do Rio de Janeiro.<br><br>
+                
+                <h1>Quais foram as primeiras conquistas?</h1><br>
+                
+                Sendo dirigido por Alberto Borgerth em 1911, o Flamengo já começou sua história nos campos
+                tendo destaque. Em 1912, dia 3 de maio, na primeira partida, o time derrotou o Mangueira.
+                Para quem acha que foi por uma pequena diferença, já adiantamos que não! Foram, pelo menos,
+                15 gols feitos pelo Mengão. Não podemos esquecer de destacar os responsáveis da época pelo
+                sucesso, os jogadores eram: Galo, Arnaldo, Baena, Baiano, Borgerth, Coriol, Amarante,
+                Píndaro, Gustavo, Nery e Gilberto.
+                E as conquistas não pararam por aí. Em 1926, já era o time com mais vitórias, ganhando
+                campeonatos importantes anos antes, como o Carioca, os Troféus: Torre Sport Club PE,
+                Agência Hudson, Jornal do Comércio de Pernambuco, Sérgio de Loreto e campeonato carioca
+                de 2 ° quadro.
+                Em 1933, teve sua primeira partida internacional, já vencendo o River e deixando de ser um time
+                amador.<br><br>
+                
+                <h1>Como iniciou no futebol profissional?</h1><br>
+
+                A partir do início no futebol profissional, o Flamengo começou a crescer. Em 1934, tinha 
+                José Bastos Padilhas como presidente. O trabalho foi para trazer nomes importantes para o time,
+                como Leônidas da Silva, que foi o artilheiro de destaque na Copa do Mundo de 1938.
+                O Mengão teve seu primeiro título fora do Brasil em 1949, na Guatemala.
+                Muitos craques passaram pelo time. Como na década de 70, contando com Leandro, Júnior, Zico e
+                Andrade, que conquistaram para o time a Taça Guanabara e outras vitórias importantes até
+                hoje para o Flamengo.
+                Na sequência, o jogador Zico teve ainda mais destaque, sendo conhecido como Rei da Gávea e 74.
+                Junto ao jogador Júlio César, trouxe diversas vitórias, como o primeiro título no Campeonato
+                Brasileiro e, mais tarde, o Mundial contra o Liverpool, dando a Zico reconhecimento de melhor
+                jogador da temporada. Foi uma época marcante para o time.
+                Com diversas conquistas e depois de enfrentar algumas instabilidades, no centenário do Flamengo,
+                o presidente era o Kléber Leite, que levou ao time ninguém mais ninguém menos que o melhor jogador
+                da época: Romário. O jogador foi artilheiro carioca e Sávio, destaque da Copa Ouro Sul.<br><br>
+                
+                <h1>Quais outros nomes importantes passaram pelo time?</h1><br>
+
+                Outros nomes de destaque passaram pelo Flamengo ao longo dos anos, como: Vagner Love, Adriano
+                Imperador e Ronaldinho Gaúcho. Como não lembrar deles usando o uniforme rubro-negro?
+                E não podemos deixar de falar do famoso: Gabriel Barbosa, mais conhecido como Gabigol,
+                que salvou o Mengão no Campeonato da Libertadores de 2019, virando o jogo nos últimos minutos
+                do segundo tempo. Para justificar o apelido, em quantidades de gols, o Gabigol fica atrás
+                apenas do lendário Zico.<br><br>
+                
+                <h1>Quais as curiosidades sobre o time?</h1><br>
+
+                O Flamengo também traz momentos peculiares em sua caminhada, com algumas curiosidades sobre
+                o time e as mudanças que teve ao longo dos anos. Confira algumas delas e veja se já sabia de
+                todas.<br><br>
+                
+                <h2>O flamengo não tinha a cor vermelho e preto</h2><br>
+
+                O clube de remo não vestia o clássico vermelho e preto do rubro-negro atual. E, sim, regatas
+                listradas amarelas e verdes. Porém, algumas questões dificultavam a utilização dessas cores
+                em terras cariocas, como: a ação do sol desbotava o uniforme, o tecido era mais difícil de 
+                ser encontrado nessas cores. Logo, decidiram trocar por cores mais fortes e que marcassem a
+                mesma presença que o time marca hoje em dia, o preto e vermelho! E, vamos combinar, ficou 
+                muito mais bonito!<br><br>
+                
+                <h2>O mascote nem sempre foi o urubu</h2><br>
+
+                É até difícil adivinhar qual era o mascote se não o urubu. Mas adiantamos: era um personagem e
+                tinha muita ligação com o remo. Sem mais mistérios, era o personagem marinheiro forte: Popeye.
+                Em 1969, foi mudado para o urubu, sendo uma representatividade dos torcedores negros e pessoas
+                de baixa renda.<br><br>
+                
+                <h2>O hino oficial</h2><br>
+
+                Quando pensamos no Mengão, logo vem à cabeça o som: “Uma vez Flamengo, sempre Flamengo,
+                Flamengo sempre eu hei de ser”, cantado por mais de 40 milhões de torcedores. 
+                Mas esse não é o hino oficial. Chocante, não é mesmo?
+                O oficial é “Flamengo, tua glória é lutar”, feito em 32 por Paulo Magalhães, ex-goleiro.
+                O nosso conhecido e amado hino foi criado em 45 e ganhou os corações rubro-negros.<br><br>
+
+                <p>Fonte - https://blog.usereserva.com/lifestyle/flamengo-historia-curiosidades/</p>
+            </div>
+        </section>
+        
+        <br><br> 
+        <!-- Contato -->
+        <section>
+            <h1 class="btn1 botoes" onclick="contato()">Deixe um comentário</h1>
+                 
+ 
+            <center>
+                <span id="contatos" style="display: none" >
+                    <b><label for="nome">Nome:</label><br></b>
+                    <input type="text" id="nome" style="width: 300px ;"/>
+                    
+                    <br>
+                    <div>
+                        <b><label for="email">E-mail:</label><br></b>
+                        <input type="text" id="nome" style="width: 300px ;"/>
+                    </div>
+                    <br>
+                    <div>
+                        <b><label for="tel">Comentário.:</label><br></b>
+                        <textarea name="text" rows="5" cols="39" placeholder="Comentários" maxlength="500"></textarea>
+                    </div>
+                    <div class="button" id="a">
+                        <button type="submit">Enviar seu comentário</button>
+                    </div>
+                </span>
+            </center>
+        </section>
+        <br><br> 
+
+        <a href="#" class="top-pag">&#9651</a>
+        
+            <div class="rodape">
+                <footer id="pag-cont">Desenvolvedor Web - Kaio Lucas</footer>
+                <footer><b>Contatos</b></footer>
+                <footer>Email: kaio.lucas.contatos@gmail.com</footer>
+                <footer>Whatsapp: (61)996588471</footer>
+                <center>
+                <footer>© 2022 - Utilidade Pública: Tecnologia, Educação e Esporte.</footer>
+                </center>
+            </div>      
+    </body>
+</html>
