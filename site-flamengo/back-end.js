@@ -59,7 +59,7 @@ let questoes = [
 
     },
     {
-        pergunta: '<hr color=red></hr>'+'VOCÊ CONCLUIU O QUESTIONÁRIO, VEJA A SUA PONTUAÇÃO NA SEÇÃO RESULTADO!' ,
+        pergunta: '<hr color=red></hr>'+'VOCÊ CONCLUIU O QUESTIONÁRIO, VEJA A SUA PONTUAÇÃO NA SEÇÃO RESULTADO!!' ,
         alternativas: []
         
     }
